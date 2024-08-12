@@ -28,7 +28,7 @@ boot-options:
   boot_mode:
     label: Boot mode
     description: Select boot type for the service (only for python-based ones)
-    default: "0"
+    default: "1"
     items:
       "0":
         label: JupyterLab
