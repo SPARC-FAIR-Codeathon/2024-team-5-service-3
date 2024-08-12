@@ -1,0 +1,30 @@
+name: Visualize 3D Model
+key: simcore/services/dynamic/visualize-3d-model
+type: dynamic
+integration-version: 2.0.0
+version: 0.1.0
+description: Module to allow quick and simple visualization of 3D models
+contact: appukuttan.shailesh@gmail.com
+thumbnail: https://github.com/ITISFoundation/osparc-assets/blob/cb43207b6be2f4311c93cd963538d5718b41a023/assets/default-thumbnail-cookiecutter-osparc-service.png?raw=true
+authors:
+  - name: Shailesh Appukuttan
+    email: appukuttan.shailesh@gmail.com
+    affiliation: INT, Aix-Marseille University, France
+inputs:
+
+outputs:
+  
+boot-options:
+  boot_mode:
+    label: Boot mode
+    description: Select boot type for the service (only for python-based ones)
+    default: "1"
+    items:
+      "0":
+        label: JupyterLab
+        description: Display the JupyterLab interface in the default boot mode
+      "1":
+        label: Voila
+        description:
+          To start as Voila save a notebook as "voila.ipynb" in the root
+          folder
