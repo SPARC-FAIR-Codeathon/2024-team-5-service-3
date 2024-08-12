@@ -11,14 +11,24 @@ authors:
     email: appukuttan.shailesh@gmail.com
     affiliation: INT, Aix-Marseille University, France
 inputs:
-
+  input_1:
+    displayOrder: 1
+    label: 3D File
+    description: 3D file to visualize
+    type: data:*/*
+    
 outputs:
-  
+  output_1:
+    displayOrder: 1
+    label: dummy output
+    description: dummy output
+    type: string
+
 boot-options:
   boot_mode:
     label: Boot mode
     description: Select boot type for the service (only for python-based ones)
-    default: "1"
+    default: "0"
     items:
       "0":
         label: JupyterLab
